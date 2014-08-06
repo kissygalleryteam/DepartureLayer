@@ -4,8 +4,8 @@
   <meta charset="utf-8"/>
   <meta name="spm-id" content="608.2291429" />
   <link rel="stylesheet" href="http://g.tbcdn.cn/tb/global/2.9.7/global-min.css">
-  <script src="http://g.tbcdn.cn/??kissy/k/1.4.2/seed-min.js"></script>
-<script>var S = KISSY;S.config({packages:[{name:"kg",path:"http://g.tbcdn.cn/kg/",charset:"utf-8",ignorePackageNameInUri:true}]});if (S.Config.debug){var srcPath = "../";S.config({packages:[{name:"kg/departurelayer/2.0.0",path:srcPath,charset:"utf-8",ignorePackageNameInUri:true}]});}</script></head>
+  <script src="http://g.tbcdn.cn/kissy/k/1.4.2/seed-min.js"></script>
+</head>
 <body>
 <script type="text/javascript">
   (function (d) {
@@ -21,18 +21,26 @@
 
 <script charset="utf-8">
   (function (S) {
-    if(S.Config.debug) {
+    S.config({
+      packages:[{
+        name:"kg",
+        path:"http://g.tbcdn.cn/kg/",
+        charset:"utf-8",
+        ignorePackageNameInUri:true
+      }]
+    });
+    if (S.Config.debug){
       S.config({
         packages:[{
-          name: 'kg/DepartureLayer',
-          path: '../../',
-          charset: 'utf-8',
-          ignorePackageNameInUri: true
+          name:"kg/departurelayer/2.0.0/",
+          path:'../',
+          charset:"utf-8",
+          ignorePackageNameInUri:true
         }]
       });
     }
 
-    S.use('kg/DepartureLayer/2.0.0/index', function (S, DepartureLayer) {
+    S.use('kg/departurelayer/2.0.0/index', function (S, DepartureLayer) {
       var killer = new DepartureLayer({
         ua: [
           {
