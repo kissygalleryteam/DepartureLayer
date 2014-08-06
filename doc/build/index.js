@@ -1,8 +1,8 @@
 /*
 combined files : 
 
-kg/departurelayer/2.0.1/store
-kg/departurelayer/2.0.1/index
+kg/departurelayer/2.0.2/store
+kg/departurelayer/2.0.2/index
 
 */
 /**
@@ -14,7 +14,7 @@ kg/departurelayer/2.0.1/index
  *   更新 var 按照规范
  *   更新 tabsize 按照规范
  */
-KISSY.add('kg/departurelayer/2.0.1/store',function(S) {
+KISSY.add('kg/departurelayer/2.0.2/store',function(S) {
 	var api               = {};
 	var win               = window;
 	var doc               = win.document;
@@ -138,7 +138,7 @@ KISSY.add('kg/departurelayer/2.0.1/store',function(S) {
  *   })(KISSY);
  * 
  */
-KISSY.add('kg/departurelayer/2.0.1/index',function (S, UA, Store, Dialog, Toptip) {
+KISSY.add('kg/departurelayer/2.0.2/index',function (S, UA, Store, Dialog, Toptip) {
   // This package path
   var packagePath = this.path.split(/\/[^\/]+?$/)[0] + '/';
   // Support tokens < > <= >= = ~ d-d
