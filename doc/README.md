@@ -6,13 +6,17 @@ departurelayer是一个可配置的弹出浮层，在检测到一定的浏览器
 * 作者：槿瑟
 * demo：[http://kg.kissyui.com/departurelayer/2.0.0/demo/index.html](http://kg.kissyui.com/departurelayer/2.0.0/demo/index.html)
 
+
 ## 如何引入组件
 
 ```
 KISSY.use('kg/departurelayer/2.0.0/index')
 ```
 
+
+
 ## 初始化组件
+
 ```
 KISSY.use('kg/departurelayer/2.0.0/index', function (S, Killer) {
   var killer = new Killer({
@@ -103,6 +107,7 @@ KISSY.use('kg/departurelayer/2.0.0/index', function (S, Killer) {
 ```
                 
 ## 说明：
+
 以 ua 判断浏览器真正版本可能不准确，比如用户切换 浏览器模式或文本模式。 这时候请在 html head 标签内添加如下代码，使浏览器以最新引擎渲染。
 
 ```
