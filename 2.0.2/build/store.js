@@ -1,7 +1,7 @@
 /*
 combined files : 
 
-kg/departurelayer/2.0.2/store
+kg/departurelayer/2.0.1/store
 
 */
 /**
@@ -13,7 +13,7 @@ kg/departurelayer/2.0.2/store
  *   更新 var 按照规范
  *   更新 tabsize 按照规范
  */
-KISSY.add('kg/departurelayer/2.0.2/store',function(S) {
+KISSY.add('kg/departurelayer/2.0.1/store',function(S) {
 	var api               = {};
 	var win               = window;
 	var doc               = win.document;
