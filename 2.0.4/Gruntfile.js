@@ -28,8 +28,7 @@ module.exports = function(grunt) {
                 ],
                 depFilePath: 'mods.js',
                 fixModuleName:true,
-                map: [["<%= pkg.name %>/", "kg/<%= pkg.name %>/"]]
-                // map: [["<%= pkg.name %>/", "kg/<%= pkg.name %>/<%= pkg.version %>/"]]
+                map: [["<%= pkg.name %>/", "kg/<%= pkg.name %>/<%= pkg.version %>/"]]
             },
             main: {
                 files: [
