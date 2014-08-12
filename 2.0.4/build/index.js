@@ -1,8 +1,8 @@
 /*
 combined files : 
 
-kg/departurelayer/2.0.3/store
-kg/departurelayer/2.0.3/index
+kg/departurelayer/store
+kg/departurelayer/index
 
 */
 /**
@@ -14,7 +14,7 @@ kg/departurelayer/2.0.3/index
  *   更新 var 按照规范
  *   更新 tabsize 按照规范
  */
-KISSY.add('kg/departurelayer/2.0.3/store',function(S) {
+KISSY.add('kg/departurelayer/store',function(S) {
 	var api               = {};
 	var win               = window;
 	var doc               = win.document;
@@ -138,7 +138,7 @@ KISSY.add('kg/departurelayer/2.0.3/store',function(S) {
  *   })(KISSY);
  * 
  */
-KISSY.add('kg/departurelayer/2.0.3/index',function (S, UA, Store, Dialog, Toptip) {
+KISSY.add('kg/departurelayer/index',function (S, UA, Store, Dialog, Toptip) {
   // Support tokens < > <= >= = ~ d-d
   var reToken = /^\s*([<>=~]{0,2})\s*(\d+)\s*$|^\s*(\d+)\s*\-\s*(\d+)\s*$/i;
   // noop func for hack

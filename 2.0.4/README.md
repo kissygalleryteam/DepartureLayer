@@ -2,9 +2,9 @@
 
 departurelayer是一个可配置的弹出浮层，在检测到一定的浏览器版本时弹出，提供了默认主题，用户可自行配置浮层样式及浮层弹出的条件、间隔时间等。
 
-* 版本：2.0.3
+* 版本：2.0.4
 * 作者：槿瑟
-* demo：[http://kg.kissyui.com/departurelayer/2.0.3/demo/index.html](http://kg.kissyui.com/departurelayer/2.0.3/demo/index.html)
+* demo：[http://kg.kissyui.com/departurelayer/2.0.4/demo/index.html](http://kg.kissyui.com/departurelayer/2.0.4/demo/index.html)
 
 ## 如何引入组件
 
@@ -12,12 +12,12 @@ departurelayer是一个可配置的弹出浮层，在检测到一定的浏览器
 KISSY.config({
   packages:[{
     name:"kg/departurelayer",
-    path:"http://g.tbcdn.cn/kg/departurelayer/2.0.3",
+    path:"http://g.tbcdn.cn/kg/departurelayer/2.0.4",
     charset:"utf-8",
     ignorePackageNameInUri:true
   }]
 });
-KISSY.use('kg/departurelayer/2.0.3/index')
+KISSY.use('kg/departurelayer/index')
 ```
 
 ## 初始化组件
@@ -27,7 +27,7 @@ KISSY.use('kg/departurelayer/2.0.3/index')
 如果不需要自定义html内容和样式，dialog,toptip,theme请不要配置。
 
 ```
-KISSY.use('kg/departurelayer/2.0.3/index', function (S, Killer) {
+KISSY.use('kg/departurelayer/index', function (S, Killer) {
   var killer = new Killer({
     // 可选参数，用以匹配浏览器
     ua: [
