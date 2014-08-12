@@ -1,10 +1,10 @@
 /*
 combined files : 
 
-kg/departurelayer/2.0.3/toptip
+kg/departurelayer/toptip
 
 */
-KISSY.add('kg/departurelayer/2.0.3/toptip',function (S, Base, Node) {
+KISSY.add('kg/departurelayer/toptip',function (S, Base, Node) {
   function Toptip () {}
   var props = {
     render: function (config) {
