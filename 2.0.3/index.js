@@ -61,6 +61,8 @@
  * 
  */
 KISSY.add(function (S, UA, Store, Dialog, Toptip) {
+  // This package path
+  var packagePath = this.path.split(/\/[^\/]+?$/)[0] + '/';
   // Support tokens < > <= >= = ~ d-d
   var reToken = /^\s*([<>=~]{0,2})\s*(\d+)\s*$|^\s*(\d+)\s*\-\s*(\d+)\s*$/i;
   // noop func for hack
@@ -218,10 +220,10 @@ KISSY.add(function (S, UA, Store, Dialog, Toptip) {
       var self = this;
       var options = self.options;
       KISSY.use([
-        'kg/departurelayer/toptip.js',
+        packagePath + './toptip.js',
         options.theme ? 
           options.theme : 
-          'kg/departurelayer/toptip.less.css'
+          packagePath + '/toptip.less.css'
       ], function (S, Toptip) {
         callback.call(self, Store, null, new Toptip().render(options.toptip).show());
       });
@@ -235,10 +237,10 @@ KISSY.add(function (S, UA, Store, Dialog, Toptip) {
       var self = this;
       var options = self.options;
       KISSY.use([
-        'kg/departurelayer/dialog.js',
+        packagePath + '/dialog.js',
         options.theme ? 
           options.theme : 
-          'kg/departurelayer/dialog.less.css'
+          packagePath + '/dialog.less.css'
       ], function (S, Dialog) {
         callback.call(self, Store, new Dialog().render(options.dialog).show());
       });
@@ -253,14 +255,14 @@ KISSY.add(function (S, UA, Store, Dialog, Toptip) {
       var self = this;
       var options = self.options;
       var modules = [
-        'kg/departurelayer/dialog.js',
-        'kg/departurelayer/toptip.js'
+        packagePath + '/dialog.js',
+        packagePath + './toptip.js'
       ];
       if (options.theme) {
         modules.push(options.theme);
       } else {
-        modules.push('kg/departurelayer/dialog.less.css');
-        modules.push('kg/departurelayer/toptip.less.css');
+        modules.push(packagePath + '/dialog.less.css');
+        modules.push(packagePath + '/toptip.less.css');
       }
       KISSY.use(modules, function (S, Dialog, Toptip) {
         var toptip = new Toptip().render(options.toptip);

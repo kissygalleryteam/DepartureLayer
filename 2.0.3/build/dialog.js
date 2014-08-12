@@ -1,10 +1,10 @@
 /*
 combined files : 
 
-kg/departurelayer/2.0.3/dialog
+kg/departurelayer/2.0.2/dialog
 
 */
-KISSY.add('kg/departurelayer/2.0.3/dialog',function (S, Base, Node) {
+KISSY.add('kg/departurelayer/2.0.2/dialog',function (S, Base, Node) {
   var VOID_DEFAULT = "javascript:void(0)";
   var CURRENT_HANDLE_CLASS = 'kb-slider-cur J_KBSlider-cur';
   function Layter (handle, during) {
