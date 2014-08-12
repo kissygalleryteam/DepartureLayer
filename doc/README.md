@@ -11,8 +11,8 @@ departurelayer是一个可配置的弹出浮层，在检测到一定的浏览器
 ```
 KISSY.config({
   packages:[{
-    name:"kg",
-    path:"http://g.tbcdn.cn/kg",
+    name:"kg/departurelayer",
+    path:"http://g.tbcdn.cn/kg/departurelayer/2.0.3",
     charset:"utf-8",
     ignorePackageNameInUri:true
   }]
