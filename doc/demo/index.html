@@ -24,24 +24,25 @@
     S.config({
       packages:[{
         name:"kg",
-        path:"http://g.tbcdn.cn/kg/",
+        path:"http://g.tbcdn.cn/kg",
         charset:"utf-8",
         ignorePackageNameInUri:true
       }]
     });
+
     if (S.Config.debug){
       S.config({
         packages:[{
-          name:"kg/departurelayer/2.0.2/",
-          path:'../',
+          name:"kg/departurelayer",
+          path:'http://g.tbcdn.cn/kg/departurelayer/2.0.2/',
           charset:"utf-8",
           ignorePackageNameInUri:true
         }]
       });
     }
 
-    S.use('kg/departurelayer/2.0.2/index', function (S, DepartureLayer) {
-      var killer = new DepartureLayer({
+    S.use('kg/departurelayer/index', function (S, Killer) {
+      var killer = new Killer({
         ua: [
           {
             browser: 'ie',
@@ -57,7 +58,7 @@
         expires: 0
       });
       killer.kill();
-      var killerIE8 = new DepartureLayer({
+      var killerIE8 = new Killer({
         ua:[{
           browser: 'ie',
           version: '~8',
@@ -69,7 +70,7 @@
       });
       killerIE8.kill();
 
-      var kissChrome = new DepartureLayer({
+      var kissChrome = new Killer({
         ua: [
           {
             browser: 'chrome',
