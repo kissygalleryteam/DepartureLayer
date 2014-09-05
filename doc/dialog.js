@@ -177,7 +177,7 @@ KISSY.add(function (S, Base, Node) {
         }, '.4', 'backBothStrong', function () {
           $dialog.hide();
           $mask.hide();
-          Node.one('body').addClass('body-fix');
+          Node.one('body').removeClass('body-fix');
           self.fire('hide');
         });
       });
