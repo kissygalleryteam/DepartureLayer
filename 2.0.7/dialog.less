@@ -188,23 +188,52 @@
   }
 }
 
-.kb-dialog-btn {
-  width: 100%;
+.kb-dialog-footer {
+  padding: 15px 45px;
   position: relative;
-  text-align: center;
+  text-align: left;
   display: block;
-  height: 120px;
-  margin-top: -1px;
-  box-shadow: 0 0 3px 0 #333 inset;
-  padding-top: 40px;
+  height: 110px;
+  border: 1px solid #c70000;
+  border-width: 1px 0; 
   background-color: #c70000;
-  span{
-    font-size: 45px;
-    margin-right: 20px;
-    vertical-align: middle;
+  .pull-left{
+    float: left;
+  }
+  .pull-right{
+    float: right;
+  }
+  .kb-dialog-txt{
+    line-height: 1;
+    color:#fff;
+  }
+  .kb-dialog-big-txt{
+    font-size: 55px;
+  }
+  .kb-dialog-mid-txt{
+    font-size: 26px;
+    margin-top: 10px;
+  }
+  .kb-dialog-btn{
+    float: left;
+    padding-right: 40px;
+    border-right: 1px solid #fff;
+    margin-right: 40px;
+    text-align: center;
+  }
+  .kb-dialog-chrome{
+    margin-right: 0;
+    border-right: 0;
+    padding-right: 15px;
+  }
+  .kb-dialog-title{
+    display: block;
+    padding: 3px 5px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin-top: 10px;
   }
   img{
-    vertical-align: middle;
-    zoom: 1;
+    vertical-align: top;
   }
 }

@@ -381,6 +381,6 @@ KISSY.add('kg/departurelayer/index',function (S, UA, Store, Dialog, Toptip) {
 }, {
   requires: [
     'ua',
-    'kg/departurelayer/store'
+    'kg/kg/departurelayer/store'
   ]
 });
