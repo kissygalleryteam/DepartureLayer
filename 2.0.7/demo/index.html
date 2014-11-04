@@ -23,11 +23,16 @@
   (function (S) {
     S.config({
       packages:[{
-        name:"kg/departurelayer",
-        path:"http://g.tbcdn.cn/kg/departurelayer/2.0.7",
+        name:"kg",
+        path:"http://g.tbcdn.cn/kg",
         charset:"utf-8",
         ignorePackageNameInUri:true
-      }]
+      }],
+      modules:{
+        'departurelayer': {
+          alias:'kg/departurelayer/2.0.7'
+        }
+      }
     });
     if (S.Config.debug) {
       S.config({
