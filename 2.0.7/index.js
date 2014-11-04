@@ -303,6 +303,6 @@ KISSY.add(function (S, UA, Store, Dialog, Toptip) {
 }, {
   requires: [
     'ua',
-    'departurelayer/store'
+    './store'
   ]
 });
