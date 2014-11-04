@@ -29,16 +29,16 @@
         charset:'utf-8'
       }]
     });
-    // if (S.Config.debug) {
-    //   S.config({
-    //     packages:[{
-    //       name:"kg/departurelayer",
-    //       path:"/kg/departurelayer/",
-    //       charset:"utf-8",
-    //       ignorePackageNameInUri:true
-    //     }]
-    //   });
-    // }
+    if (S.Config.debug) {
+      S.config({
+        packages:[{
+          name:"kg/departurelayer",
+          path:"/kg/departurelayer/",
+          charset:"utf-8",
+          ignorePackageNameInUri:true
+        }]
+      });
+    }
 
     S.use('kg/departurelayer/index', function (S, Killer) {
       var killer = new Killer({
@@ -57,6 +57,7 @@
         expires: 0
       });
       killer.kill();
+      return;
       var killerIE8 = new Killer({
         ua:[{
           browser: 'ie',
