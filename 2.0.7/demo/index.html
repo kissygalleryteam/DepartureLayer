@@ -39,13 +39,13 @@
         }]
       });
     }
-
+alert(1)
     S.use('kg/departurelayer/index', function (S, Killer) {
       var killer = new Killer({
         ua: [
           {
             browser: 'ie',
-            version: '<11',
+            version: '<=11',
             show: 'all'
           },
           {
