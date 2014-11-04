@@ -25,20 +25,20 @@
       packages:[{
         name:"kg/departurelayer",
         path:"http://g.tbcdn.cn/kg/departurelayer/2.0.7",
-        charset:"utf-8",
-        ignorePackageNameInUri:true
-      }]
+        ignorePackageNameInUri:true,
+        charset:'utf-8'
+      },]
     });
-    if (S.Config.debug) {
-      S.config({
-        packages:[{
-          name:"kg/departurelayer",
-          path:"/kg/departurelayer/",
-          charset:"utf-8",
-          ignorePackageNameInUri:true
-        }]
-      });
-    }
+    // if (S.Config.debug) {
+    //   S.config({
+    //     packages:[{
+    //       name:"kg/departurelayer",
+    //       path:"/kg/departurelayer/",
+    //       charset:"utf-8",
+    //       ignorePackageNameInUri:true
+    //     }]
+    //   });
+    // }
 
     S.use('kg/departurelayer/index', function (S, Killer) {
       var killer = new Killer({
