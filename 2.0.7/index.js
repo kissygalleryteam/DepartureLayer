@@ -272,14 +272,15 @@ KISSY.add(function (S, UA, Store, Dialog, Toptip) {
     },
     /**
      * run kill
-     * @param  {Function} callback 
-     * @return {UACheck}            self
+     * @param  {Function}        callback 
+     * @param {Boolean} enforce  是否强制执行
+     * @return {UACheck}         self
      */
-    kill: function (callback) {
+    kill: function (callback, enforce) {
       var self = this;
       var options = self.options;
       callback = callback || noop;
-      if (self.matched) {
+      if (self.matched || enforce) {
         // out of expires ,just show the toptip
         if (!self._outOfExpires(options.expires)) {
           self.show = 'toptip';
