@@ -296,7 +296,7 @@ KISSY.add('kg/departurelayer/index',function (S, UA, Store, Dialog, Toptip) {
       var self = this;
       var options = self.options;
       KISSY.use([
-        'kg/departurelayer/toptip.js',
+        'kg/departurelayer/toptip',
         options.theme ? 
           options.theme : 
           'kg/departurelayer/toptip.less.css'
@@ -313,7 +313,7 @@ KISSY.add('kg/departurelayer/index',function (S, UA, Store, Dialog, Toptip) {
       var self = this;
       var options = self.options;
       KISSY.use([
-        'kg/departurelayer/dialog.js',
+        'kg/departurelayer/dialog',
         options.theme ? 
           options.theme : 
           'kg/departurelayer/dialog.less.css'
@@ -331,8 +331,8 @@ KISSY.add('kg/departurelayer/index',function (S, UA, Store, Dialog, Toptip) {
       var self = this;
       var options = self.options;
       var modules = [
-        'kg/departurelayer/dialog.js',
-        'kg/departurelayer/toptip.js'
+        'kg/departurelayer/dialog',
+        'kg/departurelayer/toptip'
       ];
       if (options.theme) {
         modules.push(options.theme);
@@ -350,14 +350,15 @@ KISSY.add('kg/departurelayer/index',function (S, UA, Store, Dialog, Toptip) {
     },
     /**
      * run kill
-     * @param  {Function} callback 
-     * @return {UACheck}            self
+     * @param  {Function}        callback 
+     * @param {Boolean} enforce  是否强制执行
+     * @return {UACheck}         self
      */
-    kill: function (callback) {
+    kill: function (callback, enforce) {
       var self = this;
       var options = self.options;
       callback = callback || noop;
-      if (self.matched) {
+      if (self.matched || enforce) {
         // out of expires ,just show the toptip
         if (!self._outOfExpires(options.expires)) {
           self.show = 'toptip';
@@ -376,11 +377,11 @@ KISSY.add('kg/departurelayer/index',function (S, UA, Store, Dialog, Toptip) {
     }
   };
   // for version check 
-  UACheck.VERSION = '1.1';
+  UACheck.VERSION = '2.0.7';
   return UACheck;
 }, {
   requires: [
     'ua',
-    './store.js'
+    './store'
   ]
 });

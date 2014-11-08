@@ -83,6 +83,8 @@ module.exports = function(grunt) {
                             '!node_modules/**/*.less',
 							'!build/**/*.less',   
 							'!demo/**/*.less'],
+                        // dest: './',
+                        // ext: '.less.css'
                         dest: './build/',
                         ext: '.css'
                     }
@@ -136,6 +138,8 @@ module.exports = function(grunt) {
                         expand: true,
                         cwd: './build',
                         src: ['**/*.less.css', '!**/*.less-min.css'],
+                        // dest: './build',
+                        // ext: '.less.css'
                         dest: './build',
                         ext: '.less-min.css'
                     }

@@ -15,15 +15,38 @@ KISSY.add('kg/departurelayer/toptip',function (S, Base, Node) {
       } else {
         config = S.mix({
           title : '亲，您的浏览器版本过低导致网页打开速度过慢，为享受极速体验，我们建议亲：',
-          button : '升级浏览器',
-          href: 'http://windows.microsoft.com/zh-cn/windows/downloads'
+          button: {
+            name: 'ie',
+            title: '升级IE浏览器',
+            href: 'http://windows.microsoft.com/zh-cn/windows/downloads'
+          },
+          others : [
+            {
+              name: 'uc',
+              title: 'UC浏览器',
+              href: "http://down2.uc.cn/pcbrowser/index.php?id=101&pid=4415"
+            },
+            {
+              name: 'chrome',
+              title: '谷歌浏览器',
+              href: 'http://www.google.cn/intl/zh-CN/chrome/browser/?installdataindex=chinabookmarkcontrol&brand=CHUN&gclid=CIDzwJGo3cECFQZvvAodnwMAsA'
+            }
+          ]
         }, config, true, null, true);
 
         content = '<span class="kb-toptip-title">'+
           config.title+
           '</span><a href="'+
-          config.href+
-          '" target="_blank" data-spm-click="gostr=/ued;locaid=btn2" class="kb-toptip-btn">'+config.button+'</a>';
+          config.button.href+
+          '" target="_blank" data-spm-click="gostr=/ued;locaid=btn2" class="kb-toptip-btn kb-toptip-ie">'+config.button.title+'</a>';
+        if (config.others && config.others.length) {
+          content += '<span class="kb-toptip-title">或者点击下载</span>';
+          var _tmp = [];
+          S.each(config.others, function (info) {
+            _tmp.push('<a href="'+info.href+'" class="kb-toptip-btn kb-toptip-'+info.name+'" data-spm-click="gostr=/ued;locaid=btn'+info.name+'" target="_blank">'+info.title+'</a>');
+          });
+          content += _tmp.join('或');
+        }
       }
       var $toptip = self.$toptip = Node('<div data-spm="20140707" class="kb-toptip kb-toptip-wrapper">' + 
           content + 

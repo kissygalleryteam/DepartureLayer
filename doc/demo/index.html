@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="spm-id" content="608.2291429" />
   <link rel="stylesheet" href="http://g.tbcdn.cn/tb/global/2.9.7/global-min.css">
-  <script src="http://g.tbcdn.cn/kissy/k/1.4.2/seed-min.js"></script>
+  <script src="http://g.tbcdn.cn/kissy/k/1.4.0/seed-min.js"></script>
 </head>
 <body>
 <script type="text/javascript">
@@ -24,15 +24,16 @@
     S.config({
       packages:[{
         name:"kg/departurelayer",
-        path:"http://g.tbcdn.cn/kg/departurelayer/2.0.4",
-        charset:"utf-8",
-        ignorePackageNameInUri:true
+        path:"http://g.tbcdn.cn/kg/departurelayer/2.0.7",
+        ignorePackageNameInUri:true,
+        charset:'utf-8'
       }]
     });
     if (S.Config.debug) {
       S.config({
         packages:[{
           name:"kg/departurelayer",
+          // path:"../",
           path:"/kg/departurelayer/",
           charset:"utf-8",
           ignorePackageNameInUri:true
@@ -45,7 +46,7 @@
         ua: [
           {
             browser: 'ie',
-            version: '<7',
+            version: '<=11',
             show: 'all'
           },
           {
@@ -57,6 +58,7 @@
         expires: 0
       });
       killer.kill();
+
       var killerIE8 = new Killer({
         ua:[{
           browser: 'ie',

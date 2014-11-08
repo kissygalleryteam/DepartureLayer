@@ -112,7 +112,6 @@
   width: 29px;
   height: 29px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZAQMAAAD+JxcgAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAE5JREFUCNcdzbsJgDAAhOFPLCwdIZtkJkuLgBlNNxFcwE47heuOe/wHLCZWM02hqhSNub9Mx814nQzPjq9jg4qoeEnTyyLbUMILOR95gx+ofBcV1S3vSQAAAABJRU5ErkJggg==);
-  _background-image: url(http://gtms02.alicdn.com/tps/i2/TB1XK3tGFXXXXcUXpXX3pcaFFXX-25-25.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -179,12 +178,10 @@
 .kb-slider-handle .kb-slider-prev {
   left: 0;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAABTCAMAAAC73ZcfAAAAY1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+aRQ2gAAAAIHRSTlMAAfPDJLsdF3ID9/C068msV/xqQjkxZF5O2dCkkX5JDVD/yvAAAAEQSURBVEjHfdZJFoIwEEXRgogoII2Axv7vf5UanKZepv/UVdJVDMYKWf2CcFj8bLwBejoAWn58VE9Ap72PanCzq7T4qIJb2ElvQHsXbVOhj/aFjyo62f6H3p3CopI0OoUXpUIfVQS0B1Szg5aSKkC95TinrMtnu4RqBfQBaLMD9JlHQ8rKOhselMYL0FN2kx83VGdAb8cs2mzhCGhf+KhmQCtAp9VB3Rmfpy1rsme1/RcG40r8Tf638J2dGc4Qzy2uCq8n7gTeQ7j7AG5rwx3PZwVPGZ9PPNl8J+BtgvcQwcEIjoa3JsHR8KYmOBp2B4Lfhh2Jexk0rGDYPwkejHs2dnt8J/ALA98mBC/8HoKxfgFqrSomE1A6/QAAAABJRU5ErkJggg==);
-  _background-image: url(http://gtms04.alicdn.com/tps/i4/TB1JFW4GpXXXXbyaXXXnbEsFVXX-28-83.png);
 }
 .kb-slider-handle .kb-slider-next {
   right: 0;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAABTCAMAAAC73ZcfAAAAb1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8v0wLRAAAAJHRSTlMAxfIdFwPvvrhzIvz3qlo4ybJpYkomUTH06tnPfm1Co5KOEAxbucC4AAABCElEQVRIx52W2RaCMAxEWWQtICCCgIJL/v8bhTyTe472dU4utE1n4nmDB+t+AvFcUulUgZiNAH4HBH4JgEMXA7iUBnYjBPYFwJ0QuBa5UGkcUmlqir0QeCZwLwSeCdxtYmCCfQIvsq3WUpMdnNuXI5JYpQ2BByFwSeDc7erDUJ+7eDPAp0DBkfGsBMCfUcHXY7XVUv8YHE2qZsellYqFAa4JvAiBUwIPjsArgcNCRWf1mi6sxG/i39I+6YR+PtseoHCf0AnQQ9x93Lfc8XkBLb0qFN8nvWzyBHQT8iFyMPY+dk32W3Zq9nhOB84VTiTOMk5Bzk9OXs5sTnueE3jCmCqaav6eh2zpC49FLldsKANLAAAAAElFTkSuQmCC);
-  _background-image: url(http://gtms01.alicdn.com/tps/i1/TB1EGstGFXXXXX0XpXXnbEsFVXX-28-83.png);
 }
 .kb-dialog-footer {
   padding: 15px 45px;
