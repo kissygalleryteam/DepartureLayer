@@ -377,7 +377,7 @@ KISSY.add('kg/departurelayer/index',function (S, UA, Store, Dialog, Toptip) {
     }
   };
   // for version check 
-  UACheck.VERSION = '1.1';
+  UACheck.VERSION = '2.0.7';
   return UACheck;
 }, {
   requires: [
