@@ -79,7 +79,7 @@ KISSY.add('kg/departurelayer/dialog',function (S, Base, Node) {
         }
 
         S.each(config.slider.slice(0,5), function (slide, i) {
-          _slides.push('<a class="kb-slider-item J_KBSlider-item J_KBSlider-item'+i+'" href="'+slide.href+'"><img data-src="' + slide.img + '" alt="'+(slide.alt||'')+'" /></a>');
+          _slides.push('<a class="kb-slider-item J_KBSlider-item J_KBSlider-item'+i+'" href="'+slide.href+'" target="_blank"><img data-src="' + slide.img + '" alt="'+(slide.alt||'')+'" /></a>');
           _handles.push('<a href="javascript:void(0);" data-spm-click="gostr=/ued;locaid=dot'+i+'" data-index="' + i + '" class="kb-slider-step J_KBSlider-step"></a>');
         });
         var slider = [
