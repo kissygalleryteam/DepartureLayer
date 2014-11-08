@@ -105,7 +105,7 @@ KISSY.add(function (S, Base, Node) {
             '<img src="',(!-[1,] && !window.XMLHttpRequest && link.ie6 ? link.ie6 : link.icon),'" alt="',link.title,'" /> ',
             '<span class="kb-dialog-title">',link.title,'</span>',
             '</a>'].join(''));
-          alert((!-[1,] && !window.XMLHttpRequest && link.ie6 ? link.ie6 : link.icon))
+          alert(!-[1,] + '  ' + !window.XMLHttpRequest)
         });
         var footer = [
           '<div class="kb-dialog-footer clearfix">',
