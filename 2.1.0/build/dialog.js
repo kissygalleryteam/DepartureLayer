@@ -198,6 +198,7 @@ KISSY.add('kg/departurelayer/dialog',function (S, Base, Node) {
     _bindEvt: function ($dialog,$mask) {
       var self = this;
       $dialog.on('show', function () {
+        Node.one('body').addClass('body-fix');
         $mask.show().animate({
           opacity: '.75'
         },'.4', 'easeBothStrong');
@@ -221,8 +222,8 @@ KISSY.add('kg/departurelayer/dialog',function (S, Base, Node) {
         }, '.4', 'backBothStrong', function () {
           $dialog.hide();
           $mask.hide();
+          Node.one('body').removeClass('body-fix');
           self.fire('hide');
-          S.one('body').css({"overflow": "visible"});
         });
       });
     },
